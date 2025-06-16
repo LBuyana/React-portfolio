@@ -1,10 +1,11 @@
+// src/components/Navbar.jsx
 import { Link } from 'react-router-dom';
-import Logo from '../common/Logo'; // Styled "L" logo component
+import Logo from './Logo'; // Custom component for styled "L"
 
-export default function Navbar() {
+function Navbar() {
   return (
     <nav className="navbar">
-      <Logo />
+      <Logo /> {/* Styled "L" logo */}
       <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
@@ -15,3 +16,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;

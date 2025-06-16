@@ -1,11 +1,12 @@
-import Navbar from './components/layout/Navbar';
-import Hero from './components/sections/Hero';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
-export default function App() { // Must be default export
+export default function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
