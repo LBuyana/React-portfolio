@@ -1,17 +1,9 @@
-// src/components/Hero.jsx
-function Hero() {
+import Hero from '../components/sections/Hero';
+
+export default function Home() {
   return (
-    <section className="hero">
-      <h1>Lathitha Buyana</h1>
-      <h2>BCom Information Systems at the University of the Western Cape</h2>
-      <p>
-        I am a dedicated BCom Information Systems student with a passion for 
-        technology-driven solutions. Skilled in data analysis, system development, 
-        and business process optimization.
-      </p>
-      <button className="cta-button">View My Projects</button>
-    </section>
+    <main>
+      <Hero />
+    </main>
   );
 }
-
-export default Hero;

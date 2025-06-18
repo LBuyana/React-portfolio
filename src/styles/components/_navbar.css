@@ -1,35 +1,46 @@
-/* Navbar */
 .navbar {
+  background-color: white;
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: var(--nav-bg);
 }
 
-/* Logo */
-.logo-char {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
-/* Nav Links */
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* Space between links */
+  margin-right: 1rem; /* Space from right edge */
 }
 
-.nav-links a {
-  color: var(--text-primary);
+.nav-link {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 0.75rem; /* Internal spacing */
+  transition: all 0.3s ease;
 }
 
-/* Theme Toggle */
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
+.nav-link:hover {
+  color: rgb(122, 109, 109);
+  transform: translateY(-2px);
+}
+
+/* Active link styling (for current page) */
+.nav-link.active {
+  border-bottom: 2px solid white;
+}
+.nav-logo {
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-logo:hover {
   cursor: pointer;
+  color: rgba(114, 63, 63, 0.8);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
 }

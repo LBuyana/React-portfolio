@@ -1,0 +1,18 @@
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  background: var(--bg-light);
+  border-radius: 1rem;
+}
+
+.skill-icon {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}

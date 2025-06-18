@@ -1,0 +1,78 @@
+.about-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-container {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  flex: 0 0 250px;
+}
+
+.profile-photo img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+}
+
+.bio-text {
+  flex: 1;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 1rem;
+  border-left: 2px solid var(--primary);
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline li::before {
+  content: '●';
+  position: absolute;
+  left: -0.7rem;
+  color: var(--primary);
+}
+
+.certification {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.certification:hover {
+  color: var(--primary);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
